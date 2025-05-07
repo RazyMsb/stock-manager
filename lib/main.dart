@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-
+import 'package:razy_mesboub_2/models/products.dart';
+import 'package:razy_mesboub_2/screens/editProducts_page.dart';
+import 'package:razy_mesboub_2/screens/productdetail_page%20.dart';
+import 'package:razy_mesboub_2/screens/productsListe_page.dart' hide ProductDetailScreen;
 import 'screens/login_page.dart';
 import 'screens/home_page.dart';
 import 'screens/addproducts_page.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -13,6 +15,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,9 +24,29 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (ctx) => const LoginScreen(),
-        '/home': (ctx)  => const HomeScreen(),
+        '/home': (ctx) => const HomeScreen(),
         '/add-product': (ctx) => const AddProductForm(),
+        '/product-list': (ctx) => const ItemsList(), // Add this route
+        '/edit-product': (ctx) => EditProductScreen(ModalRoute.of(ctx)!.settings.arguments as Product),
+        '/product-detail': (ctx) => const ProductDetailScreen(),
       },
+     theme: ThemeData(
+  primaryColor: const Color(0xFF1E4D6B),
+  scaffoldBackgroundColor: const Color(0xFFF5F2ED),
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    backgroundColor: Color(0xFF1E4D6B),
+    extendedSizeConstraints: BoxConstraints.tightFor(height: 56, width: 56),
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: const Color(0xFF1E4D6B),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+    ),
+  ),
+),
     );
   }
 }
