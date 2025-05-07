@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "205052847187",
+    "project_id": "razy-mesboub-2-f3f5f",
+    "storage_bucket": "razy-mesboub-2-f3f5f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205052847187:android:2283b518cc2ace15eb52a6",
+        "android_client_info": {
+          "package_name": "com.example.razy_mesboub_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3PVQjEjGsPDPdLmypMgY5h9xl6Jz8lg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205052847187:android:66875ada5b5bced6eb52a6",
+        "android_client_info": {
+          "package_name": "com.exemple.stockmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3PVQjEjGsPDPdLmypMgY5h9xl6Jz8lg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
