@@ -103,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => const TransactionHistoryPage(), // <-- Navigate to TransactionHistoryPage
+                      builder: (_) => TransactionHistoryPage(),
                     ),
                   );
                 },

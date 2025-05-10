@@ -3,8 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:razy_mesboub_2/models/products.dart';
-import 'editproducts_page.dart';
-
+import 'package:razy_mesboub_2/screens/edit_products_page.dart.dart';
 class ItemsList extends StatefulWidget {
   const ItemsList({super.key});
 

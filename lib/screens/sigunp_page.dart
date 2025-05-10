@@ -186,7 +186,7 @@ class _SignupPageState extends State<SignupPage> {
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: const Color(0xFF1E4D6B)),
         filled: true,
-        fillColor: Colors.white.withOpacity(0.85),
+        fillColor: Colors.white.withAlpha(220),
         hintText: hintText,
         hintStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(

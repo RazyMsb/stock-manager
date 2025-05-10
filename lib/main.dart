@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:razy_mesboub_2/models/products.dart';
+import 'package:razy_mesboub_2/screens/TransactionHistory_Page.dart';
 import 'package:razy_mesboub_2/screens/analytics_dashboard.dart';
-import 'package:razy_mesboub_2/screens/editProducts_page.dart';
+import 'package:razy_mesboub_2/screens/edit_products_page.dart.dart';
 import 'package:razy_mesboub_2/screens/productdetail_page%20.dart';
 import 'package:razy_mesboub_2/screens/productsListe_page.dart' hide ProductDetailScreen;
 import 'package:razy_mesboub_2/services/analytics_service.dart';
@@ -33,6 +34,8 @@ class MyApp extends StatelessWidget {
         '/edit-product': (ctx) => EditProductScreen(ModalRoute.of(ctx)!.settings.arguments as Product),
         '/product-detail': (ctx) => const ProductDetailScreen(),
         '/analytics-dashboard':(ctx) => AnalyticsDashboard(userId: ModalRoute.of(ctx)!.settings.arguments as String),
+          '/transaction-history': (context) => TransactionHistoryPage(), // SUPPRIMER
+
 
       },
      theme: ThemeData(
